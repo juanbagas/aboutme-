@@ -1,0 +1,127 @@
+/*
+
+Name : Juan bagas geraldo
+NIM : 2481013
+
+*/
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me (Responsive) | Nama Kamu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>About Me</h1>
+    <p>Web Programming I &bull; CSS Layout &amp; Responsive Design</p>
+  </header>
+
+  <nav>
+    <a href="#profile">Profil</a>
+    <a href="#hobbies">Hobi</a>
+    <a href="#education">Pendidikan</a>
+    <a href="#contact">Kontak</a>
+  </nav>
+
+  <main>
+    <div class="content-grid">
+
+      <!-- PROFILE (Flexbox) -->
+      <section id="profile" class="profile">
+        <span class="badge">Mahasiswa</span>
+        <img class="profile-photo" src="C:\Pemograman web 1\about me\foto\About me.jpg.jpeg" alt="Foto profil Nama Kamu">
+        <div class="profile-info">
+          <h2>Juan bagas geraldo</h2>
+          <p><strong>NIM:</strong> 2481013</p>
+          <p><strong>Program Studi:</strong> Teknik Informatika</p>
+          <p><strong>Tentang saya:</strong> Universitas Advent Indonesia</p>
+          <p>Saya sedang belajar pemrograman web dan menikmati proses membuat
+             tampilan yang rapi serta nyaman dibuka di berbagai ukuran layar.</p>
+        </div>
+      </section>
+
+      <!-- HOBBIES -->
+      <section id="hobbies">
+        <h2>Hobi</h2>
+        <ul>
+          <li>Badminton</li>
+          <li>Bermain game</li>
+          <li>Menonton video</li>
+          <li>Mendengarkan musik</li>
+        </ul>
+      </section>
+
+      <!-- EDUCATION (Tabel) -->
+      <section id="education">
+        <h2>Pendidikan</h2>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Tahun</th>
+                <th>Institusi</th>
+                <th>Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2024 - sekarang</td>
+                <td>Universitas Advent Indonesia</td>
+                <td>S1 Teknik Informatika</td>
+              </tr>
+              <tr>
+                <td>2021 - 2024</td>
+                <td>SMK Cengkareng 1</td>
+                <td>Teknik Komputer dan Jaringan</td>
+              </tr>
+              <tr>
+                <td>2018 - 2021</td>
+                <td>SDN 14 Pagi</td>
+                <td>SDN 14 Pagi</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- CONTACT (Form) -->
+      <section id="contact">
+        <h2>Hubungi Saya</h2>
+        <form action="#" method="post" onsubmit="event.preventDefault(); alert('Pesan terkirim, terima kasih!');">
+          <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama" placeholder="Nama kamu" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email@contoh.com" required>
+          </div>
+          <div class="form-group">
+            <label for="topik">Topik</label>
+            <select id="topik" name="topik">
+              <option value="pertanyaan">Pertanyaan</option>
+              <option value="kolaborasi">Kolaborasi</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="pesan" placeholder="Tulis pesanmu di sini" required></textarea>
+          </div>
+          <button type="submit">Kirim</button>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Juan bagas geraldo &bull; Universitas Advent Indonesia</p>
+  </footer>
+
+</body>
+</html>
